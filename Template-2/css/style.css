@@ -1,0 +1,313 @@
+:root {
+  --main-width: 100%;
+  --main-height: 100%;
+  --main-background-color: #043099ba;
+  --main-color: #00c3ff;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  /* background-image: linear-gradient(to left ,#4776E6 ,#8E54E9),url(a link of image); */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.navigation-bar-section nav {
+  background-color: rgba(238, 238, 238, 0.925);
+  text-transform: uppercase;
+  padding: 10px 40px;
+  text-align: center;
+}
+
+.navigation-bar-section nav .navbar-brand {
+  color: rgba(0, 0, 255, 0.911);
+}
+
+.navigation-bar-section nav .navbar-brand span {
+  color: var(--main-color);
+}
+
+.navigation-bar-section nav li {
+  margin-right: 10px;
+}
+
+.navigation-bar-section nav a {
+  color: rgba(0, 0, 0, 0.918);
+  transition: all 0.2s ease;
+}
+
+.navigation-bar-section nav a:hover {
+  color: red;
+}
+
+/* Home..*/
+.hero {
+  background-image: url(../images/home-bg.jpg);
+  width: var(--main-width);
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero .hero-background {
+  background-color: var(--main-background-color);
+  width: var(--main-width);
+  height: var(--main-height);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.hero .hero-background .container .row {
+  padding: 40px;
+}
+
+.hero .hero-background .container .row button {
+  color: #fff;
+}
+
+.hero .hero-background .container .row button:hover {
+  color: rgba(0, 0, 255, 0.5);
+  background-color: #fff;
+}
+
+.hero .hero-background .container .row .col-container::not(button) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* About..*/
+.about {
+  width: var(--main-width);
+  height: 80vh;
+  /* height: 100%; */
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about h2 {
+  margin-bottom: 50px;
+}
+
+.about .row span {
+  color: rgba(0, 0, 255, 0.9);
+  font-size: large;
+}
+
+.about .row .inner-img-container {
+  display: flex;
+  justify-content: center;
+}
+
+.about .row .inner-img-container .img-parent {
+  max-width: 200px;
+  max-height: 200px;
+  position: relative;
+  margin: 10px;
+}
+
+.about .row .inner-img-container .img-parent img {
+  width: var(--main-width);
+  height: var(--main-height);
+  border-radius: 10px;
+}
+
+.about .row .inner-img-container .img-parent .img-child {
+  position: absolute;
+  background-color: #eeeeeead;
+  color: black;
+  bottom: 0;
+  width: var(--main-width);
+  text-align: center;
+}
+
+/* About About-Text-Section */
+.about-text {
+  padding: 50px;
+  background-image: linear-gradient(to left, #4776e6, #8e54e9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: var(--main-width);
+  height: 100%;
+}
+
+.about-text button {
+  color: #fff;
+  background-color: black;
+  border-radius: 40px;
+  padding: 10px 20px;
+}
+
+.about-text button:hover {
+  color: rgba(0, 0, 255, 0.5);
+  background-color: #fff;
+}
+
+/*Screenshot.. */
+.screenshot {
+  width: var(--main-width);
+  height: var(--main-height);
+  background-color: black;
+  color: #fff;
+  padding-top: 60px;
+}
+
+/* .screenshot h2 {
+  
+  width: 100%;
+  background-color: red;
+  position: relative;
+} */
+/* .screenshot .container h2:after{
+  content: '';
+  position: absolute;
+  left: 25%;
+  bottom: 0;
+  width: 50%;
+  height: 2px;
+  background-color: #eee8;
+} */
+/*Screenshot-Carousel-Section */
+.carousel {
+  width: var(--main-width);
+  padding: 20px;
+}
+
+.carousel .carousel-inner {
+  width: var(--main-width);
+  height: var(--main-height);
+  padding: 20px 10px;
+  display: flex;
+  align-items: center;
+}
+
+.carousel .carousel-inner img {
+  object-fit: cover;
+  margin: 10px;
+}
+
+.carousel .carousel-indicators {
+  position: relative;
+  border-radius: 50%;
+}
+
+.carousel .carousel-indicators button {
+  background-color: #eee;
+  width: 15px;
+  height: 15px;
+}
+
+/* App Pricing..*/
+.app-pricing {
+  background-color: var(--main-background-color);
+  color: #fff;
+  padding-top: 60px;
+}
+
+.app-pricing .row {
+  display: flex;
+  justify-content: center;
+}
+
+.app-pricing .row .column-container {
+  background-color: #eeeeeead;
+  color: black;
+  padding: 20px 0;
+  border-radius: 10px;
+  margin: 5px;
+}
+
+.app-pricing .row .column-container button:hover {
+  color: rgba(0, 0, 255, 0.5);
+  background-color: #fff;
+}
+
+/* Contact..*/
+.contact {
+  background-image: url(../images/newsletter-bg.jpg);
+  width: var(--main-width);
+  height: 80vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contact .contact-background {
+  background-color: var(--main-background-color);
+  width: var(--main-width);
+  height: var(--main-height);
+  color: #fff;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact .contact-background input {
+  outline: none;
+  padding: 5px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  width: var(--main-width);
+  border: 2px white;
+  border-style: none none solid none;
+  background-color: transparent;
+}
+
+.contact .contact-background input::placeholder {
+  color: #fff;
+  /* background-color: rgba(0, 0, 255, 0.5); */
+}
+
+.contact .contact-background button {
+  color: rgba(0, 0, 255, 0.5);
+  background-color: #fff;
+  font-weight: bold;
+  border-radius: 40px;
+}
+
+.contact .contact-background button:hover {
+  color: #fff;
+  background-color: rgba(0, 0, 255, 0.5);
+}
+
+/* Footer..*/
+footer {
+  background-color: black;
+  width: var(--main-width);
+  max-height: 20vh;
+  color: #fff;
+  padding: 20px;
+  font-size: small;
+}
+
+footer .container .row .icons i {
+  margin-right: 15px;
+  color: #fff;
+}
+
+footer .container .row .icons :hover i {
+  color: var(--main-color);
+  transition: all 0.5s ease;
+}
+
+footer span {
+  color: rgba(25, 0, 255, 0.87);
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+}
